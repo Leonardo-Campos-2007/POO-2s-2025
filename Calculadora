@@ -6,7 +6,7 @@ public class Calculadora
    public Double numeroB;
     
 
-   public void calculadoraa()
+   public void soma()
    {
 
     Double resultadoSoma1 = this.numeroA + this.numeroB;

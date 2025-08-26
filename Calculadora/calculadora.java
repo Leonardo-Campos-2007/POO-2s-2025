@@ -1,6 +1,6 @@
-package calculadora;
+package Calculadora;
 
-public class Calculadora 
+public class calculadora 
 {
    public Double numeroA;
    public Double numeroB;
@@ -24,5 +24,4 @@ public class Calculadora
 
    }
 
-   
 }

@@ -1,12 +1,12 @@
 import calculadora.Calculadora;
 
-public class ExecutaCalculadora 
+public class main 
 {
-    public static void main(String[] args) 
+      public static void main(String[] args) 
     {
         
-       Calculadora calc1 = new Calculadora();
-       Calculadora calc2 = new Calculadora();
+       calculadora calc1 = new calculadora();
+       calculadora calc2 = new calculadora();
 
         calc1.numeroA = 2.0;
         calc1.numeroB = 3.0;

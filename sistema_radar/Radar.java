@@ -1,5 +1,3 @@
-package sistema_radar;
-
 public class Radar {
     public Integer limitevelocidade;
     public String modelo;
@@ -15,8 +13,15 @@ public class Radar {
     }
 
     public void avaliarVelocidade(Carro c) {
-        if (velocidade > this.limitevelocidade) {
+        if (c.velocidade > this.limitevelocidade) {
+            emitirNotificacao(c.placa, c.velocidade);
             System.out.println("Voce utrapassou o limite de velocidade");
+            if(c.velocidade > 80){
+                System.out.println("Voce pagara uma multa de 120.00 reais");
+            }
+        }
+        else{
+            System.out.println("Esta dentro dos limites");
         }
     }
 

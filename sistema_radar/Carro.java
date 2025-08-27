@@ -1,5 +1,3 @@
-package sistema_radar;
-
 public class Carro {
     public Integer ano;
     public String modelo;
@@ -14,7 +12,6 @@ public class Carro {
 
     public void frear() {
 
-        this.velocidade -= 5;
         if (this.velocidade > 0) {
             this.velocidade -= 5;
         }

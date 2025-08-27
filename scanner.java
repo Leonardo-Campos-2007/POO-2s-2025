@@ -10,7 +10,11 @@ public class scanner
         System.out.println("Qual o seu nome? ");
         String nome = entradaUsuario.nextLine();
 
-        System.out.println("Olá, "+ nome);
+        System.out.println("QUAL SUA IDADE ? ");
+        float idade = entradaUsuario.nextFloat();
+
+        System.out.println("Olá, " + nome);
+        System.out.println("Sua idade eh " + idade);
 
     }
 }

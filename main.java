@@ -1,4 +1,4 @@
-import calculadora.Calculadora;
+import Calculadora.calculadora;
 
 public class main 
 {
@@ -20,3 +20,4 @@ public class main
 
     }
 }
+

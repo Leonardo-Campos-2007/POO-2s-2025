@@ -21,7 +21,7 @@ public class Carro {
     }
 
     public Integer getplaca(Integer placa) {
-        this.placa = placa;
+        return this.placa;
     }
 
     public void acelerar() {

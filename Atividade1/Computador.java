@@ -1,10 +1,10 @@
 public class Computador {
     private Integer memoriaRam; 
-    private Integer SSD;
+    private int SSD;
     private Integer nucleos;
     private Float operacoesporsegundo;
 
-    public Computador(Integer memoriaRam, Integer SDD, Integer nucleos, Float operacoesporsegundo){
+    public Computador(Integer memoriaRam, int SDD, Integer nucleos, Float operacoesporsegundo){
         this.memoriaRam = memoriaRam;
         this.SSD = SSD;
         this.nucleos = nucleos;
@@ -50,7 +50,22 @@ public class Computador {
         this.operacoesporsegundo = operacoesporsegundo;
     }
 
+        public void executarPrograma(Programa p) {
+        if (getmemoriaRam() >= p.getMemoriaRamAlocada() && getSDD() >= p.getSSDocupado()) {
+            System.out.println("Programa execultado com sucesso");
+        } else {
 
+            if (getmemoriaRam() < p.getMemoriaRamAlocada()) {
+                System.out.println("Memoria RAM insuficiente para execultar o programa");
+            }
+            if (getSDD() < p.getSSDocupado()) {
+
+                System.out.println("Espaço em disco insuficiente para executar o programa");
+
+            }
+
+        }
+    }
 
 
     

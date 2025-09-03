@@ -1,10 +1,10 @@
 public class Programa {
 
 private Integer memoriaRamAlocada;
-private Integer SSDocupado;
+private int SSDocupado;
 private Integer quantidadeOperacoes;
 
-public Programa(Integer memoriaRamAlocada, Integer SSDocupado, Integer quantidadeOperacoes) {
+public Programa(Integer memoriaRamAlocada, int SSDocupado, Integer quantidadeOperacoes) {
 
     this.memoriaRamAlocada = memoriaRamAlocada;
     this.SSDocupado = SSDocupado;
@@ -29,11 +29,11 @@ public void setQuantidadeOperacoes(Integer quantidadeOperacoes) {
 }
 
 
-public Integer getSSDocupado() {
+public int getSSDocupado() {
     return SSDocupado;
 }
 
-public void setSSDocupado(Integer sSDocupado) {
+public void setSSDocupado(int sSDocupado) {
     SSDocupado = sSDocupado;
 }
 

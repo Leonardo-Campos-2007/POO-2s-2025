@@ -6,11 +6,11 @@ public class main {
         Programa COD_WAR_ZONE = new Programa(8, 5000, 1000);
         Programa GTA_VI = new Programa(64, 400, 1000);
 
-        Computador computador = new Computador(32, 400, 5, 10000f);
+        Computador computador = new Computador(32, 1000, 5, 10000f);
 
         computador.executarPrograma(Skyrim);
-        computador.executarPrograma(COD_WAR_ZONE);
-        computador.executarPrograma(GTA_VI);
+        //computador.executarPrograma(COD_WAR_ZONE);
+        //computador.executarPrograma(GTA_VI);
 
     }
 

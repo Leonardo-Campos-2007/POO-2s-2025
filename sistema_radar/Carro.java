@@ -1,7 +1,7 @@
 public class Carro {
     public Integer ano;
     public String modelo;
-    public String placa;
+    private String placa;
     private Integer velocidade;
 
     public Carro(String placa, Integer velocidade, Integer ano, String modelo) {
@@ -16,9 +16,12 @@ public class Carro {
     }
 
     public void setvelocidade(Integer velocidade) {
-
+        if(velocidade != null && velocidade > 0)
         this.velocidade = velocidade;
+    }
 
+    public Integer getplaca(Integer placa) {
+        this.placa = placa;
     }
 
     public void acelerar() {

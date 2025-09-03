@@ -15,10 +15,14 @@ public class Radar {
     public void emitirNotificacao(String placa, Integer velocidadeAvaliada) {
 
         System.out.println("Limite de velocidade: " + this.limitevelocidade);
+        
 
-        System.out.println("Velocidade Avaliada:" + velocidadeAvaliada);
+        System.out.println("Velocidade Avaliada: " + velocidadeAvaliada);
+        
 
         System.out.println("Placa: " + placa);
+       
+
     }
 
     public void avaliarVelocidade(Carro c) {
@@ -30,7 +34,7 @@ public class Radar {
             }
         }
         else{
-            System.out.println("Esta dentro dos limites");
+            System.out.println("Esta dentro dos limites ");
         }
     }
 

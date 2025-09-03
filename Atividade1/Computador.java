@@ -4,7 +4,7 @@ public class Computador {
     private Integer nucleos;
     private Float operacoesporsegundo;
 
-    public Computador(Integer memoriaRam, int SDD, Integer nucleos, Float operacoesporsegundo){
+    public Computador(Integer memoriaRam, int SSD, Integer nucleos, Float operacoesporsegundo){
         this.memoriaRam = memoriaRam;
         this.SSD = SSD;
         this.nucleos = nucleos;
@@ -22,11 +22,11 @@ public class Computador {
 
 
 
-    public Integer getSDD(){
+    public int getSDD(){
         return SSD;
 
     }
-    public void setSSD(Integer SSD){
+    public void setSSD(int SSD){
         this.SSD = SSD;
     }
 

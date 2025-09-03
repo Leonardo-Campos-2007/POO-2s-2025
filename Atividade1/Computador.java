@@ -12,7 +12,7 @@ public class Computador {
 
     }
 
-    public Integer memoriaRam(){
+    public Integer getmemoriaRam(){
         return memoriaRam;
 
     }
@@ -22,7 +22,7 @@ public class Computador {
 
 
 
-    public Integer SDD(){
+    public Integer getSDD(){
         return SSD;
 
     }
@@ -32,7 +32,7 @@ public class Computador {
 
 
 
-    public Integer nucleos(){
+    public Integer getnucleos(){
         return nucleos;
 
     }
@@ -40,9 +40,9 @@ public class Computador {
         this.nucleos = nucleos;
     }
 
-    
 
-    public Float operacoesporsegundo(){
+
+    public Float getoperacoesporsegundo(){
         return operacoesporsegundo;
 
     }

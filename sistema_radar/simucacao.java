@@ -33,6 +33,7 @@ public class simucacao {
         opala.acelerar();
         opala.acelerar();
         opala.acelerar();
+        opala.acelerar();
 
         radar.avaliarVelocidade(opala);
 

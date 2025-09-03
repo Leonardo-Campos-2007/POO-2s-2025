@@ -17,5 +17,10 @@ public class SistemaOperacional {
         return computador;
     }
 
+    public void setComputador(Computador computador) {
+        this.computador = computador;
+    }
+    
+
     
 }

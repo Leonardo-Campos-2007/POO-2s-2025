@@ -1,21 +1,11 @@
-public class chacara {
 
-    public int vagas;
-    public Municipio municipio;
-    public double areaM2;
-    public boolean pocoartesiano;
 
-    public chacara(int vagas, boolean pocoartesiano, Municipio municipio, double areaM2){
+public class Chacara extends Imovel{
+    private Boolean possuiPocoArtesiano;
 
-        this.vagas = vagas;
-        this.pocoartesiano = pocoartesiano;
-        this.municipio = municipio;
-        this.areaM2 = areaM2;
-    
-}
+    public Chacara(Municipio municipio, Double areaM2, Integer vagas, Boolean possuiPocoArtesiano){
+        super(municipio, areaM2, vagas);
+        this.possuiPocoArtesiano = possuiPocoArtesiano;
+    }
 
-public Double calcularIPTU(){
-    return (this.areaM2 * this.municipio.getPrecoM2()) * 1.005;
-}
-    
 }

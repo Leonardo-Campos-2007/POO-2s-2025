@@ -11,6 +11,8 @@ public class main {
        SistemaOperacional so = new SistemaOperacional(computador);
 
        so.executarProgama(Skyrim, computador);
+       so.executarProgama(GTA_VI, computador);
+       so.executarProgama(COD_WAR_ZONE, computador);
 
 
        

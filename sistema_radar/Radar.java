@@ -27,7 +27,7 @@ public class Radar {
 
     public void avaliarVelocidade(Carro c) {
         if (c.getVelocidade() > this.limitevelocidade) {
-            emitirNotificacao(c.placa, c.getVelocidade());
+            emitirNotificacao(c.getplaca(null), c.getVelocidade());
             System.out.println("Voce utrapassou o limite de velocidade");
             if(c.getVelocidade() > 80){
                 System.out.println("Voce pagara uma multa de 120.00 reais");
@@ -35,7 +35,7 @@ public class Radar {
         }
         else{
             System.out.println("Esta dentro dos limites ");
-        }
+        }   
     }
 
 }

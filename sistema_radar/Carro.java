@@ -20,8 +20,12 @@ public class Carro {
         this.velocidade = velocidade;
     }
 
-    public Integer getplaca(Integer placa) {
+    public String getplaca(String placa) {
         return this.placa;
+    }
+
+    public void setPlaca(String placa) {
+        this.placa = placa;
     }
 
     public void acelerar() {

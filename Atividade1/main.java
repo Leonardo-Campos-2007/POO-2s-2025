@@ -8,9 +8,14 @@ public class main {
 
         Computador computador = new Computador(32, 1000, 5, 10000f);
 
-        computador.executarPrograma(Skyrim);
-        //computador.executarPrograma(COD_WAR_ZONE);
-        //computador.executarPrograma(GTA_VI);
+       SistemaOperacional so = new SistemaOperacional(computador);
+
+       so.executarProgama(Skyrim, computador);
+       so.executarProgama(GTA_VI, computador);
+       so.executarProgama(COD_WAR_ZONE, computador);
+
+
+       
 
     }
 

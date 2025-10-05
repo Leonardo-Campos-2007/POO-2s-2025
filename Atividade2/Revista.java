@@ -1,10 +1,10 @@
 public class Revista extends Material {
 
-    String autor;
-    int edicao;
+    private String autor;
+    private int edicao;
 
-    public Revista(String titulo, int ano, int edicao) {
-        super(titulo, ano);
+    public Revista(String titulo, int anoPublicacao, int edicao) {
+        super(titulo, anoPublicacao);
         this.edicao = edicao;
     }
 
@@ -25,8 +25,12 @@ public class Revista extends Material {
     }
 
     @Override
-    public void descricao(){
-        
+    public void descricao() {
+
+        System.out.println("Título: " + getTitulo());
+        System.out.println("Ano: " + getAnoPublicacao());
+        System.out.println("Edição: " + getEdicao());
+
     }
-    
+
 }

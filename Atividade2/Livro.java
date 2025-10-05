@@ -1,11 +1,11 @@
 public class Livro extends Material {
 
-    String edicao;
-    String autor;
+    
+    private String autor;
 
-    public Livro(String titulo, int ano, String autor) {
+    public Livro(String titulo, int anoPublicacao, String autor) {
 
-        super(titulo, ano);
+        super(titulo, anoPublicacao);
         this.autor = autor;
 
     }
@@ -15,12 +15,17 @@ public class Livro extends Material {
         return autor;
     }
 
-    public void setEdicao(String edicao) {
-        this.edicao = edicao;
+    public void setAutor(String autor) {
+        this.autor = autor;
     }
 
     @Override
     public void descricao() {
+
+        System.out.println("Título: " + getTitulo());
+        System.out.println("Ano: " + getAnoPublicacao());
+        System.out.println("Autor: " + getAutor());
+        
 
     }
 

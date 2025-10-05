@@ -1,7 +1,7 @@
 public class Usuario extends Pessoa {
 
 
-    Integer matricula;
+    private Integer matricula;
 
     public Usuario(String nome, String email, Integer matricula){
 
@@ -20,6 +20,10 @@ public class Usuario extends Pessoa {
 
     @Override
     public void exibirInfo(){
+
+        System.out.println("Nome: " + getNome());
+        System.out.println("Email: " + getEmail());
+        System.out.println("Matricula: " + getMatricula());
         
     }
     

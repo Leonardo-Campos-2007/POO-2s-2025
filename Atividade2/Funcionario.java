@@ -1,9 +1,9 @@
-public class Funcionario {
+public class Funcionario extends Pessoa {
 
     String cargo;
 
-    public Funcionario(String cargo){
-
+    public Funcionario(String nome, String email, String cargo){
+        super(nome, email);
         this.cargo = cargo;
 
     }
@@ -15,9 +15,10 @@ public class Funcionario {
     public void setCargo(String cargo) {
         this.cargo = cargo;
     }
-    
 
-   void exibirInfo(){
+    
+    @Override
+   public void exibirInfo(){
 
     }
     

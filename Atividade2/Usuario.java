@@ -1,11 +1,13 @@
-public class Usuario {
+public class Usuario extends Pessoa {
+
 
     Integer matricula;
 
-    public Usuario(Integer matricula){
+    public Usuario(String nome, String email, Integer matricula){
 
+        super(nome, email);
         this.matricula = matricula;
-        
+
     }
 
     public Integer getMatricula() {
@@ -15,12 +17,10 @@ public class Usuario {
     public void setMatricula(Integer matricula) {
         this.matricula = matricula;
     }
-    
 
-    void exibirInfo(){
-
+    @Override
+    public void exibirInfo(){
         
-
     }
     
 }

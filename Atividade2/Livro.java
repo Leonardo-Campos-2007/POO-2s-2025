@@ -1,23 +1,27 @@
-public class Livro {
+public class Livro extends Material {
 
     String edicao;
+    String autor;
 
-    public Livro(String edicao){
+    public Livro(String titulo, int ano, String autor) {
 
-        this.edicao = edicao;
+        super(titulo, ano);
+        this.autor = autor;
 
     }
 
-    public String getEdicao() {
-        return edicao;
+
+    public String getAutor() {
+        return autor;
     }
 
     public void setEdicao(String edicao) {
         this.edicao = edicao;
     }
 
-    void descricao(){
-        
+    @Override
+    public void descricao() {
+
     }
-    
+
 }

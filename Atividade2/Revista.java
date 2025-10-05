@@ -2,7 +2,7 @@ public class Revista {
 
     String autor;
 
-    void Revista(String autor){
+    public Revista(String autor){
         this.autor = autor;
     }
 

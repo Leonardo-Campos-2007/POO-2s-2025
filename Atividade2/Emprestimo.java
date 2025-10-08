@@ -49,12 +49,12 @@ public class Emprestimo {
     void exibirDetalhes(){
 
         System.out.println("Detalhes do Empréstimo:");
-        System.out.println("Data de Empréstimo: " + getDataEmprestimo());
-        System.out.println("Data de Devolução: " + getDataDevolução());
+        System.out.println("Data de Empréstimo: " + this.getDataEmprestimo());
+        System.out.println("Data de Devolução: " + this.getDataDevolução());
         System.out.println("Informações da Pessoa:");
-        pessoa.exibirInfo();
+        this.pessoa.exibirInfo();
         System.out.println("Informações do Material:");
-        material.descricao();
+        this.material.descricao();
         
 
     }

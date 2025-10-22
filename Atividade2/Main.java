@@ -11,6 +11,14 @@ public class Main {
 
         int opcao;
 
+        Usuario u1 = new Usuario("Leonardo"," leonardo@email.com", 1234);
+
+        Livro l1 = new Livro("Odisseia", 2015, "Homero");
+
+        Emprestimo e1 = new Emprestimo(u1, l1, "22/10/2025", "22/11/2025");
+
+        emprestimos.add(e1);
+
         do {
             System.out.println("===== SISTEMA DE BIBLIOTECA =====");
             System.out.println("1 - Cadastrar Usuário");

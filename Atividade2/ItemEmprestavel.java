@@ -1,3 +1,5 @@
-public class ItemEmprestavel {
-    
-}
+public interface ItemEmprestavel {
+
+    public void descricao();
+
+} 

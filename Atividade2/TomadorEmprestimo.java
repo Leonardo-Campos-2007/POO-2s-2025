@@ -1,3 +1,5 @@
-public class TomadorEmprestimo {
-    
+public interface TomadorEmprestimo {
+
+    public void exibirInfo();
+
 }

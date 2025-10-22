@@ -1,4 +1,5 @@
-public class Instituicao {
+
+public class Instituicao implements TomadorEmprestimo{
 
     private String nome;
     private String cpnj;
@@ -32,6 +33,14 @@ public class Instituicao {
 
     public void setCidade(String cidade) {
         this.cidade = cidade;
+    }
+
+   @Override
+
+    public void exibirInfo(){
+        System.out.println("Nome: " + this.nome);
+        System.out.println("CPNJ: " + this.cpnj);
+        System.out.println("Cidade: " + this.cidade);
     }
 
 }

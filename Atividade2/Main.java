@@ -11,11 +11,17 @@ public class Main {
 
         int opcao;
 
+        Instituicao i1 = new Instituicao("UCB", "123456", "DF");
+
+        Colecao c1 = new Colecao("João", 10);
+
         Usuario u1 = new Usuario("Leonardo"," leonardo@email.com", 1234);
 
         Livro l1 = new Livro("Odisseia", 2015, "Homero");
 
-        Emprestimo e1 = new Emprestimo(u1, l1, "22/10/2025", "22/11/2025");
+        Emprestimo e1 = new Emprestimo(i1, c1, "22/10/2025", "22/11/2025");
+
+        
 
         emprestimos.add(e1);
 

@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
 
         ArrayList<Pessoa> pessoas = new ArrayList<>();
@@ -15,7 +15,7 @@ public class Main {
 
         Colecao c1 = new Colecao("João", 10);
 
-        Usuario u1 = new Usuario("Leonardo"," leonardo@email.com", 1234);
+        Usuario u1 = new Usuario("Leonardo"," leonardo@gmail.com", 1234);
 
         Livro l1 = new Livro("Odisseia", 2015, "Homero");
 
@@ -41,7 +41,9 @@ public class Main {
             sc.nextLine(); // consumir quebra de linha
 
             switch (opcao) {
+                
                 case 1:
+                
                     System.out.print("Nome: ");
                     String nomeU = sc.nextLine();
                     System.out.print("Email: ");
@@ -49,8 +51,15 @@ public class Main {
                     System.out.print("Matrícula: ");
                     int matricula = sc.nextInt();
                     sc.nextLine();
+                    try{
                     pessoas.add(new Usuario(nomeU, emailU, matricula));
                     System.out.println("Usuário cadastrado com sucesso!\n");
+                    } catch (Exception NomeInvalidoException){
+                        System.out.println("Nome invalido ao cadastrar usuário   \n");
+                    } catch (Exception EmailInvalidoException){
+                        System.out.println("Email invalido ao cadastrar usuário   \n");
+                    }
+                    
                     break;
 
                 case 2:
@@ -109,12 +118,22 @@ public class Main {
                         System.out.println("É necessário ter pelo menos uma pessoa e um material cadastrados.\n");
                         break;
                     }
+
+                    
+
+                       
+                    
                     System.out.println("Escolha o usuário (índice):");
                     for (int i = 0; i < pessoas.size(); i++) { 
                             System.out.println(i + " - " + pessoas.get(i).getNome());
                     }
+
+                
+                
                     int idxUsuario = sc.nextInt();
                     sc.nextLine();
+
+                
 
                     System.out.println("Escolha o material (índice):");
                     for (int i = 0; i < materiais.size(); i++) {
@@ -128,9 +147,14 @@ public class Main {
                     System.out.print("Data de devolução: ");
                     String dataD = sc.nextLine();
 
+                    try{
                     emprestimos.add(new Emprestimo(pessoas.get(idxUsuario),
                                                    materiais.get(idxMaterial),
                                                    dataE, dataD));
+                    } catch (Exception e){
+                        System.out.println("Erro ao cadastrar empréstimo: " + e.getMessage() + "\n");
+                        break;
+                    }
                     System.out.println("Empréstimo cadastrado!\n");
                     break;
                     
